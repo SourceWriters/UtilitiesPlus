@@ -1,4 +1,4 @@
-package com.syntaxphoenix.utilitiesplus.commands;
+package com.syntaxphoenix.utilitiesplus.commands.gamemode;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
@@ -12,8 +12,7 @@ import com.syntaxphoenix.utilitiesplus.configs.MessagesConfig;
 public class GameModeCommand implements CommandExecutor {
 
 	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String cmdLabel, String[] args) {
-		
+	public boolean onCommand(CommandSender sender, Command cmd, String cmdLabel, String[] args) {		
 		if(sender instanceof Player) {
 			Player p = (Player) sender;
 			if(args.length == 1) {
@@ -100,5 +99,4 @@ public class GameModeCommand implements CommandExecutor {
 		}
 		return true;
 	}
-
 }

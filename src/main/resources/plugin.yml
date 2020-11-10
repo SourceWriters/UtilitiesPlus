@@ -1,6 +1,8 @@
 name: UtilitiesPlus
 author: SyntaxPhoenix IT-Solutions
-version: 1.0
+website: syntaxphoenix.com
+version: 1.1
+api-version: 1.13
 
 main: com.syntaxphoenix.utilitiesplus.UtilitiesPlus
 
@@ -25,6 +27,14 @@ commands:
     description: PM other Players
   gm:
     description: GameMode-Command
+  gma:
+    description: Shortcut-Command for GameMode Adventure
+  gms:
+    description: Shortcut-Command for GameMode Survival
+  gmc:
+    description: Shortcut-Command for GameMode Creative
+  gmsp:
+    description: Shortcut-Command for GameMode Spectator
   invsee:
     description: Watch into other Players Inventorys
   sethome:
@@ -51,3 +61,9 @@ commands:
     description: Tp all players to you
   god:
     description: Enable/Disable God-Mode
+  enderchest:
+    description: Opens the player Enderchest-Inventory
+  ec:
+    description: Opens the player Enderchest-Inventory
+  echest:
+    description: Opens the player Enderchest-Inventory

@@ -9,8 +9,8 @@ import org.bukkit.plugin.PluginManager;
 
 import com.syntaxphoenix.syntaxphoenixstats.SyntaxPhoenixStats;
 import com.syntaxphoenix.utilitiesplus.UtilitiesPlus;
+import com.syntaxphoenix.utilitiesplus.commands.EnderChestCommand;
 import com.syntaxphoenix.utilitiesplus.commands.FlyCommand;
-import com.syntaxphoenix.utilitiesplus.commands.GameModeCommand;
 import com.syntaxphoenix.utilitiesplus.commands.GodCommand;
 import com.syntaxphoenix.utilitiesplus.commands.InvseeCommand;
 import com.syntaxphoenix.utilitiesplus.commands.KickallCommand;
@@ -18,6 +18,11 @@ import com.syntaxphoenix.utilitiesplus.commands.KillallCommand;
 import com.syntaxphoenix.utilitiesplus.commands.PmCommand;
 import com.syntaxphoenix.utilitiesplus.commands.daytime.DayCommand;
 import com.syntaxphoenix.utilitiesplus.commands.daytime.NightCommand;
+import com.syntaxphoenix.utilitiesplus.commands.gamemode.GameModeAdventureCommand;
+import com.syntaxphoenix.utilitiesplus.commands.gamemode.GameModeCommand;
+import com.syntaxphoenix.utilitiesplus.commands.gamemode.GameModeCreativeCommand;
+import com.syntaxphoenix.utilitiesplus.commands.gamemode.GameModeSpectatorCommand;
+import com.syntaxphoenix.utilitiesplus.commands.gamemode.GameModeSurvivalCommand;
 import com.syntaxphoenix.utilitiesplus.commands.home.HomeCommand;
 import com.syntaxphoenix.utilitiesplus.commands.home.SetHomeCommand;
 import com.syntaxphoenix.utilitiesplus.commands.money.BalanceCommand;
@@ -66,6 +71,10 @@ public class PluginUtils {
 		UtilitiesPlus.m.getCommand("invsee").setExecutor(new InvseeCommand());
 		
 		UtilitiesPlus.m.getCommand("gm").setExecutor(new GameModeCommand());
+		UtilitiesPlus.m.getCommand("gma").setExecutor(new GameModeAdventureCommand());
+		UtilitiesPlus.m.getCommand("gms").setExecutor(new GameModeSurvivalCommand());
+		UtilitiesPlus.m.getCommand("gmc").setExecutor(new GameModeCreativeCommand());
+		UtilitiesPlus.m.getCommand("gmsp").setExecutor(new GameModeSpectatorCommand());
 		
 		UtilitiesPlus.m.getCommand("sethome").setExecutor(new SetHomeCommand());
 		UtilitiesPlus.m.getCommand("home").setExecutor(new HomeCommand());
@@ -87,6 +96,10 @@ public class PluginUtils {
 		UtilitiesPlus.m.getCommand("tpall").setExecutor(new TpallCommand());
 		
 		UtilitiesPlus.m.getCommand("god").setExecutor(new GodCommand());	
+		
+		UtilitiesPlus.m.getCommand("enderchest").setExecutor(new EnderChestCommand());
+		UtilitiesPlus.m.getCommand("ec").setExecutor(new EnderChestCommand());
+		UtilitiesPlus.m.getCommand("echest").setExecutor(new EnderChestCommand());
 	}
 	
 	public static void loadListener() {
