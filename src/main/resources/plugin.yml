@@ -1,0 +1,53 @@
+name: UtilitiesPlus
+author: SyntaxPhoenix IT-Solutions
+version: 1.0
+
+main: com.syntaxphoenix.utilitiesplus.UtilitiesPlus
+
+commands:
+  spawn:
+    description: Teleport to Spawn
+  setspawn:
+    description: Set the Spawn
+  warp:
+    description: Teleport to defined Warp
+  setwarp:
+    description: Set a Warp-Point
+  remwarp:
+    description: Remove a Warp-Point
+  warps:
+    description: A list of all Warp-Points
+  day:
+    description: Set the Time to Day
+  night:
+    description: Set the Time to Night
+  pm:
+    description: PM other Players
+  gm:
+    description: GameMode-Command
+  invsee:
+    description: Watch into other Players Inventorys
+  sethome:
+    description: Set your HomePoint
+  home:
+    description: Teleport to your Home
+  sun:
+    description: Change the weather to sun
+  rain:
+    description: Change the weather to rain
+  thunder:
+    description: Change the weather to thunder
+  kickall:
+    description: Kicks every player on this server
+  killall:
+    description: Kill all entities
+  balance:
+    description: Shows your balance
+  money:
+    description: Main-Command to edit Balance
+  fly:
+    description: Enable/Disable Fly
+  tpall:
+    description: Tp all players to you
+  god:
+    description: Enable/Disable God-Mode
